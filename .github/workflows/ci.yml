@@ -5,14 +5,14 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  jobs:
-    test-html:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Récupération du code
-          uses: actions/checkout@v3
+jobs:
+  test-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
 
-        - name: Vérification syntaxe HTML
-          uses: Cyb3r-Jak3/html5validator-action
-          with:
-            root: .
+      - name: Vérification syntaxe HTML
+        uses: Cyb3r-Jak3/html5validator-action
+        with:
+          root: .
