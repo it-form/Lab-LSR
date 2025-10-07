@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Vérification syntaxe HTML
-        uses: Cyb3r-Jak3/html5validator-action@main
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
